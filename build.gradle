@@ -14,10 +14,6 @@
 //    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 //}
 //
-//test {
-//    useJUnitPlatform()
-//}
-//
 
 buildscript {
     ext {
@@ -45,8 +41,13 @@ repositories {
     mavenCentral()
 }
 
+test {
+    useJUnitPlatform()
+}
+
 
 dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
     //compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     implementation('org.springframework.boot:spring-boot-starter-web') //complie 대신
@@ -57,4 +58,5 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
     compile('org.springframework.session:spring-session-jdbc')
+    testCompile('org.springframework.security:spring-security-test')
 }

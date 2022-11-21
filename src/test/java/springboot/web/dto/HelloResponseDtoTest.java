@@ -1,6 +1,6 @@
 package springboot.web.dto;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat; //직접 입력
 
 public class HelloResponseDtoTest {
