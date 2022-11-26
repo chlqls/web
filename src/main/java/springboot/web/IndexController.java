@@ -1,6 +1,5 @@
 package springboot.web;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,8 +9,6 @@ import springboot.config.auth.LoginUser;
 import springboot.config.auth.dto.SessionUser;
 import springboot.service.posts.PostsService;
 import springboot.web.dto.PostsResponseDto;
-
-import javax.servlet.http.HttpSession;
 
 @RequiredArgsConstructor
 @Controller
